@@ -10,14 +10,16 @@ This tool is a command line node app that takes in parameters and returns specif
   * `liri.js`
   * `random.txt`
 
-2. Install the following npm dependencies in your project folder:
+For beginners, new files are created by navigating to your root project folder via terminal and entering `touch` followed by the name of the file above with the file extension (example: `touch keys.js` creates the keys.js file).
+
+2. Install the following npm dependencies in your project folder by entering the folling npm commands in your terminal:
   * `npm init -y` to initialize a `package.json` file for your project
   * `npm i node-spotify-api` [node-spotify-api](https://www.npmjs.com/package/node-spotify-api).
   * `npm i twitter` [Twitter for Node.js](https://www.npmjs.com/package/twitter).
   * `npm i dotenv` [dotenv](https://www.npmjs.com/package/dotenv).
   * `npm i request` [request](https://www.npmjs.com/package/request).
 
-3. Make a `.gitignore` file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
+3. Make a `.gitignore` file (see below) and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
 
 
 ```
@@ -29,7 +31,12 @@ To create a `.gitignore` file, run the following in your project folder:
 
 * `curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore`
 
-4. Next, create a file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them:
+4. Next, setup your Spotify & Twitter Developer API credentials (google this for an easy setup).
+
+[Twitter Apps](https://apps.twitter.com/)
+[Spotify Developer](https://beta.developer.spotify.com/)
+
+Then, create a file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them:
 
 ```js
 # Spotify API keys
@@ -53,6 +60,3 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 5. You will need API Keys for:
 	*	[Twitter] (https://apps.twitter.com/app/new)
 	* 	[Spotify] (https://developer.spotify.com/my-applications/#!/)
-
-	
-	
